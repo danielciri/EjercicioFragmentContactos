@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ContactosFragments</string>
+    <string name="numerocontacto">Numero del contacto</string>
+    <string name="numerocontacto2">Numero  2 del contacto</string>
+    <string name="nomcontacto">nombre del contacto</string>
+    <string name="apellidocontacto">apellido contacto</string>
+    <string name="direcion">direccion contacto</string>
+    <string name="empresa">empresacontacto</string>
+    <string name="correo">Correo del contacto</string>
+
+</resources>
