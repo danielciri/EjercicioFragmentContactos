@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DetalleActivity extends AppCompatActivity {
-    public static final String EXTRA_TEXTO = "tk.roberthramirez.EXTRA_TEXTO";
+    public static final String EXTRA_TEXTO = "com.danielcirilo.EXTRA_TEXTO";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

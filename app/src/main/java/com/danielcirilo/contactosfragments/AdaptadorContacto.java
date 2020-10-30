@@ -27,9 +27,9 @@ public class AdaptadorContacto extends ArrayAdapter<Contacto> {
         LayoutInflater inflater = LayoutInflater.from(context);
         View item = inflater.inflate(R.layout.listitem_contactos, null);
         TextView tvNombreLis =item.findViewById(R.id.tvNombreLis);
-        tvNombreLis.setText(contactos[position].getNombre()+" "+contactos[position].getApellido1());
+        tvNombreLis.setText(contactos[position].getName()+" "+contactos[position].getSurname1());
         TextView tvTelefonoLis = item.findViewById(R.id.tvTelefonoLis);
-        tvTelefonoLis.setText(contactos[position].getTelefono1());
+        tvTelefonoLis.setText(contactos[position].getPhone1());
         return item;
     }
 }

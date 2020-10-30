@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 public class FragmentoListado extends Fragment {
     private ListView lvFragmento;
     private IContactoListener listener;
+    private Contacto [] contactos;
 
 
     @Nullable
@@ -24,10 +25,11 @@ public class FragmentoListado extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Parser parserJson = new Parser(getActivity());
-        parserJson.parse();
+        Parser parser = new Parser(getActivity());
+        parser.parse();
+        contactos = parser.getContactos();
         lvFragmento = getView().findViewById(R.id.lvFragment);
-        lvFragmento.setAdapter(new AdaptadorContacto(this, parserJson.getContactos()));
+        lvFragmento.setAdapter(new AdaptadorContacto(this, contactos));
 
         lvFragmento.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
